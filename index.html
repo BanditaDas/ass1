@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Poppins',sans-serif;
+        }
+        .logo{
+            border-radius: 50%;
+            height: 104px;
+            width: 205px;
+        }
+        .tile-image{
+            width: 350px;
+            height: 200px;
+            margin: 20px;
+            float: left;
+        }
+        .sec{
+            display: flex;
+            height: 525px;
+        }
+        span{
+            color: brown;
+        }
+        footer{
+            align-items: flex-end;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 10px;
+        }
+        
+            @media (max-width:768px){
+                .main{
+                    margin: 0 20px;;
+                }
+                .logo{
+                    width: 171px;
+                    width: 86px;
+                }
+                 h1{
+                    text-align: center;
+                }
+                .sec{
+                    flex-wrap: wrap;
+                    height: 100%;
+                }
+                .tile-image{
+                    width: 100%;
+                    height: auto;
+                    margin: 20px 0;
+                }
+                footer{
+                    flex-wrap: wrap;
+                }
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img class="logo" src="./logo.jpg" alt="logo">
+        <h1>We are a <span>creating</span>  <br>Design Agency</h1>
+        <div class="sec">
+            <div class="left card"><img class="tile-image" src="./hand.jpeg" alt="hand and flower" >
+                <h2 class="card-title">Beauty</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex veniam repellat reiciendis et impedit sapiente fugit, officia, in aliquid iure minus eligendi maiores nisi, quam laudantium nulla cumque ipsum!</p>
+            </div>
+            <div class="right-card"><img class="tile-image" src="./2.jpeg" alt="metal struture" >
+                <h2 class="card-title">construction</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eum pariatur unde at impedit, odit repudiandae necessitatibus voluptatum quas enim dolor praesentium similique, molestiae, in hic? Rem consequatur officiis totam!</p>
+    
+            </div>
+        </div>
+        
+    </div>
+    <footer >
+        <p>create . develop . design . </p>
+    </footer>
+</body>
+</html>
